@@ -3,7 +3,7 @@
     <form novalidate autocomplete="off"  #form="ngForm" (submit)="onSubmit(form)"> 
     <input type="hidden" name="paymentId" [value]="service.formdata.paymentId"> 
     <div class="form-group">
-        <label >CARD OWNER NAME</label>
+        <label >CARD OWNER NAME For authorith</label>
         <input class="form-control form-control-lg" placeholder="full name"
         name="CardOwnerNumber" #cardOwnerNumber="ngModel"
          [(ngModel)]="service.formdata.cardOwnerNumber" required [class.invalid]="cardOwnerNumber.invalid && cardOwnerNumber.touched">
